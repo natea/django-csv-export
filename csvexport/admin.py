@@ -11,9 +11,9 @@ class CSVExportableAdmin(admin.ModelAdmin):
     csv_export_dialect = 'excel'
     csv_follow_relations = []
     csv_export_fmtparam = {
-       'delimiter': ',',
-       'quotechar': '\\',
-       'quoting': csv.QUOTE_MINIMAL,
+       # 'delimiter': ',',
+       # 'quotechar': '\\',
+       # 'quoting': csv.QUOTE_MINIMAL,
     }
     change_list_template = 'csvexport/change_list.html'
     
